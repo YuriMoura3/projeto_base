@@ -1,0 +1,265 @@
+html {
+    background-size: cover;
+    background-color: none;
+}
+
+body {
+    position: relative;
+    max-width: 100%;
+    margin: 0px auto;
+}
+
+
+.logoL {
+    height: 110px;
+    width: 100px;
+    margin-right: 25px;
+    transition: 0.2s ease-in-out;
+    background: none;
+    background-image: none;
+    padding-bottom: 10px;
+    display: flex;
+}
+.logoR {
+    height: 120px;
+    width: 100px;
+    margin-left: 25px;
+    transition: 0.2s ease-in-out;
+    background: none;
+    background-image: none;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+header {
+    border: 3px solid red;
+    border-radius: 20px;
+    align-items: center;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+    padding: 5px;
+    margin: 10px;
+}
+
+.menu a {
+    text-decoration: none;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family: 'AlphaFridgeMagnets';
+    color: red;
+    margin: 0px;
+    display: flex;
+    gap: 20px;
+    float: left;
+    text-align: center;
+    padding: 5px 5px;
+}
+
+.menu a:hover {
+    margin: 0px;
+    padding: 5px;
+    background-color: antiquewhite;
+    border-radius: 20px;
+}
+
+/*Iicio do rastro*/
+ul.breadcrumb {
+    padding: 8px 10px;
+    list-style: none;
+    background-color: #eee;
+}
+
+ul.breadcrumb li {
+    display: inline;
+}
+
+ul.breadcrumb li+li:before {
+    padding: 3px 5px;
+    color: black;
+    content: "/\00a0";
+}
+
+ul.breadcrumb li a {
+    text-decoration: none;
+    color: green;
+}
+
+/*Fim dp rastro */
+
+main {
+    max-width: 1380px;
+    gap: 15px;
+    border-radius: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 15px;
+    padding: 10px 10px;
+}
+.listagem-p {
+    box-shadow: 2px 2px red, 1px 1px orangered;
+    text-transform: uppercase;
+    text-align: center;
+    border-radius: 20px;
+    display: flex;
+    font-size: 16px;
+    font-family: 'Josefin Sans';
+    font-weight: bold;
+}
+
+.corpo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-around;
+    border: 1px solid greenyellow;
+}
+.imagem-post {
+    display: flex;
+    flex-direction: row;
+    width: 250px;
+    padding: 5px;
+    border-radius: 20px;
+}
+.column {
+    box-shadow: 2px 2px red, 1px 1px orangered;
+    text-transform: uppercase;
+    text-align: center;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    font-family: 'Josefin Sans';
+    font-weight: bold;
+}
+span {
+    background-color: burlywood;
+    color: #eee;
+    text-shadow: 2px 2px red, 1px 1px orangered;
+    text-transform: uppercase;
+    padding: 7px 5px 5px 5px;
+    text-align: center;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    font-family: 'Josefin Sans';
+    font-weight: bold;
+}
+a .capa {
+    width: 150px;
+    height: 80%;
+    border: 3px solid red;
+    background: none;
+    padding: 7px;
+}
+
+a .capa:hover {
+    transform: scale(1.15);
+    cursor: pointer;
+}
+
+.capa {
+    width: 150px;
+    height: 80%;
+    float: left;
+    border-radius: 20px;
+    margin-top: 15px;
+}
+
+.row1,
+.row2,
+.row3 {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.resumo {
+    text-align: justify;
+    max-height: 80px;
+    overflow-y: scroll;
+    font-size: 16px;
+    margin: 5px;
+    padding-right: 10px;
+    color: red;
+    border: 5px solid greenyellow;
+}
+
+.footer {
+    width: 100%;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    align-items: flex-end;
+    background-color: darksalmon;
+    color: aliceblue;
+    text-align: center;
+}
+
+.footer1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 5px;
+    font-family: Verdana;
+}
+/* ==============Inicio Página Projeto============= */
+nav {
+    float: left;
+    width: 30%;
+    height: 100%;
+    padding: 20px;
+    background-color: gray;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+select::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+@media (max-width:600px) {
+    nav {
+        width: 100%;
+        height: auto;
+    }
+}
+.lateral {
+
+}
+/* ==============Final Página Projeto============= */
+
+/* =============Inicio Página Contato============ */
+.logoCont {
+    height: 90px;
+    width: 85px;
+    margin-right: 25px;
+    transition: 0.2s ease-in-out;
+    background: none;
+    padding-bottom: 10px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+}
+
+.logoCont:hover {
+    perspective: 1000px;
+}
+
+.contato {
+    border: 2px solid red;
+    text-align: left;
+    padding: 0px;
+}
+
+/*===========Final Página Contato============= */
+
+/*===============Final Página Imagem============= */
+
+
+/*===============Final Página Imagem============= */
